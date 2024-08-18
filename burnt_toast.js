@@ -3,18 +3,19 @@
 //
 // https://github.com/J-Lerner/burnt_toast.js
 //
-// burnt_toast.js version 0.1
+// burnt_toast.js version 0.2
 
 (function () {
   let plateCSS = `
+      width: 25vh;
+      height: 10vh;
       margin: 2vw;
       background-color: darkslategray;
-      height: 10vh;
-      width: 25vh;
     `;
   let buttonColor = "gray";
   let buttonHoverColor = "lightgray";
   let buttonActiveColor = "darkgray";
+  let isToastTop = true;
   let isProgressBarTop = false;
   let progressContainerColor = "darkgray";
   let progressBarColor = "lightgray";
@@ -24,10 +25,10 @@
 
   function setPlateParams(width, height, margin, color) {
     plateCSS = `
+        width: ${width};
+        height: ${height};
         margin: ${margin};
         background-color: ${color};
-        height: ${height}vh;
-        width: ${width}vw;
       `;
   }
 
@@ -35,6 +36,10 @@
     buttonColor = backgroundColor;
     buttonHoverColor = hoverColor;
     buttonActiveColor = activeColor;
+  }
+
+  function setIsToastTop(bool) {
+    isToastTop = bool;
   }
 
   function setIsProgressBarTop(bool) {
@@ -74,7 +79,8 @@
 
         .--burnt-toast-plate {
             position: absolute;
-            top: 0;
+            top: ${isToastTop ? "0" : "auto"};
+            bottom: ${!isToastTop ? "0" : "auto"};
             right: -100vw;
 
             border-radius: 1vh;
@@ -134,7 +140,7 @@
             left: 0;
 
             height: 0.75vh;
-            width: 25vh;
+            width: 100%;
             border-radius: 1vh;
 
             background-color: ${progressContainerColor};
@@ -224,7 +230,9 @@
     const newPlate = document.createElement("div");
     newPlate.setAttribute("data-label", indPos);
     newPlate.classList.add("--burnt-toast-plate");
-    newPlate.style.marginTop = "calc(1vw + " + indPos * 11 + "vh)";
+    if (isToastTop)
+      newPlate.style.marginTop = "calc(1vw + " + indPos * 11 + "vh)";
+    else newPlate.style.marginBottom = "calc(1vw + " + indPos * 11 + "vh)";
 
     const newPlateText = document.createElement("h1");
     newPlateText.innerHTML = text;
@@ -268,6 +276,7 @@
     setPlateParams: setPlateParams,
     setButtonColors: setButtonColors,
     setIsProgressBarTop: setIsProgressBarTop,
+    setIsToastTop: setIsToastTop,
     setTitleCSS: setTitleCSS,
     setProgressBarColors: setProgressBarColors,
   };
