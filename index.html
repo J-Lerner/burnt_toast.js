@@ -35,9 +35,17 @@
 
         <script>
             burnt_toast.setTitleCSS(`
-                margin-left: 10px;
-                color: white;
-              `);
+              font-family: Bebas Neue;
+              color: white;
+              margin-left: 1vw;
+              margin-top: 0.5vh;
+            `);
+            burnt_toast.setPlateParams("25vh", "8vh", "2vw", "teal");
+            burnt_toast.setButtonColors("white", "black");
+            burnt_toast.setProgressBarColors("lightgray", "white");
+            burnt_toast.setIsToastTop(false);
+            burnt_toast.setIsProgressBarTop(true);
+
             addEventListener("load", burnt_toast.init);
         </script>
     </body>
