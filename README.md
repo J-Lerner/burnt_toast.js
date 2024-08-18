@@ -2,6 +2,8 @@
 
 Simple toasts for your website
 
+<img alt="burnt toast" src="https://png.pngtree.com/png-vector/20230925/ourmid/pngtree-burnt-toast-unattractive-png-image_10112587.png" style="width: 10vw"/>
+
 ## Installation and usage
 
 1. Download burnt_toast.js and add it to your web directory
