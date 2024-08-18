@@ -1,3 +1,9 @@
+// All credits go to Jordan Lerner
+// This project is licensed under MIT
+//
+// https://github.com/J-Lerner/burnt_toast.js
+//
+
 (function () {
   let plateCSS = `
       margin: 2vw;
