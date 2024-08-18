@@ -9,7 +9,7 @@ Simple toasts for your website
 1. Download burnt_toast.js and add it to your web directory
 2. In your HTML head, enter
 ```
-script type="text/javascript" src="burnt_toast.js"></script>
+<script type="text/javascript" src="burnt_toast.js"></script>
 ```
 3. In a new script element AFTER burnt_toast.js has been loaded, you may be modifying.
 
