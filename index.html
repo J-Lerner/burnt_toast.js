@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Burnt Toast Lib</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <style>
+            body {
+                background-color: #1e2a38;
+            }
+            button {
+                padding: 10px;
+                margin: 10px;
+                border-radius: 15px;
+                border: none;
+            }
+        </style>
+        <script type="text/javascript" src="burnt_toast.js"></script>
+    </head>
+    <body>
+        <button type="button" onclick="burnt_toast.sendToast('toast');">
+            sendToast();
+        </button>
+        <br />
+        <button
+            type="button"
+            onclick="burnt_toast.sendTimedToast('Timed', 4000);"
+        >
+            sendTimedToast(2000);
+        </button>
+
+        <script>
+            burnt_toast.setTitleCSS(`
+                margin-left: 10px;
+                color: white;
+              `);
+            addEventListener("load", burnt_toast.init);
+        </script>
+    </body>
+</html>
