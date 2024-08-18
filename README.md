@@ -4,7 +4,7 @@ Simple toasts for your website
 
 ## Installation and usage
 
-1. Download burnt_toast.js
+1. Download burnt_toast.js and add it to your web directory
 2. In your HTML head, enter
 ```
 script type="text/javascript" src="burnt_toast.js"></script>
