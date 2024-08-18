@@ -69,6 +69,7 @@
             height: 100vh;
             user-select: none;
             pointer-events: none;
+            z-index: 99999;
         }
 
         .--burnt-toast-plate {
