@@ -3,6 +3,7 @@
 //
 // https://github.com/J-Lerner/burnt_toast.js
 //
+// burnt_toast.js version 0.1
 
 (function () {
   let plateCSS = `
