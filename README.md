@@ -1,4 +1,4 @@
-# burnt_toast.js   v0.2
+# burnt_toast.js   v0.2 (5.63 KB)
 
 Simple toasts for your website or app
 
