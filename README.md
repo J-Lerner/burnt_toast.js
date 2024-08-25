@@ -1,8 +1,9 @@
+<img alt="burnt toast" src="https://png.pngtree.com/png-vector/20230925/ourmid/pngtree-burnt-toast-unattractive-png-image_10112587.png" style="width: 10vw"/>
+
 # burnt_toast.js   v0.2 (5.63 KB)
 
 Simple toasts for your website or app
 
-<img alt="burnt toast" src="https://png.pngtree.com/png-vector/20230925/ourmid/pngtree-burnt-toast-unattractive-png-image_10112587.png" style="width: 10vw"/>
 <img alt="example" src="example.png" style="width: 20vw; border-radius: 50%"/>
 
 ## Installation and usage
