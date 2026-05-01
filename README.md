@@ -6,6 +6,11 @@ Simple toasts for your website or app
 
 <img alt="example" src="example.png" style="width: 20vw; border-radius: 50%"/>
 
+## Visual walkthrough
+
+Watch `docs/burnt_toast_walkthrough.mp4` for a visual model of how to load,
+configure, initialize, and trigger toasts in the demo app.
+
 ## Installation and usage
 
 1. Download burnt_toast.js and add it to your web directory
